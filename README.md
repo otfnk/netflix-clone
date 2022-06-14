@@ -6,7 +6,7 @@
   </a>
 </p>
 
-> Slightly modified, full-fledged Netflix Clone. I created my database and didn't use ready API.
+#### **Slightly modified, full-fledged Netflix Clone. I created my database and didn't use ready API.**
 
 https://user-images.githubusercontent.com/99432083/173659229-c1755ece-be24-445d-8d01-1845b8567f42.mp4
 
@@ -19,7 +19,19 @@ https://user-images.githubusercontent.com/99432083/173660493-5eb0b744-4eae-48cf-
 https://user-images.githubusercontent.com/99432083/173663327-15cc24c8-db67-4a29-86f9-af11e2324ebd.mp4
 
 
-### ✨ [Demo](https://netflix-clone-da18e.web.app/)
+## ✨ [Demo](https://netflix-clone-da18e.web.app/)
+
+### Installation
+
+In the project directory, you can run:
+
+#### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.
+You may also see any lint errors in the console.
 
 ### 🫶🏻 Contribution
 > You can reach me on LinkedIn for your suggestions and various questions.
