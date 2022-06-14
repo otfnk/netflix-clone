@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "Netflix Sans";
+  src: url("../fonts/NetflixSans-Thin.woff2") format("woff2"),
+    url("../fonts/NetflixSans-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  src: url("../fonts/NetflixSans-Black.woff2") format("woff2"),
+    url("../fonts/NetflixSans-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  src: url("../fonts/NetflixSans-Regular.woff2") format("woff2"),
+    url("../fonts/NetflixSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  src: url("../fonts/NetflixSans-Light.woff2") format("woff2"),
+    url("../fonts/NetflixSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  src: url("../fonts/NetflixSans-Bold.woff2") format("woff2"),
+    url("../fonts/NetflixSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  src: url("../fonts/NetflixSans-Medium.woff2") format("woff2"),
+    url("../fonts/NetflixSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/helvetica-neue/HelveticaNeueLight.woff2") format("woff2"),
+    url("../fonts/helvetica-neue/HelveticaNeueLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/helvetica-neue/HelveticaNeueBlackCond.woff2")
+      format("woff2"),
+    url("../fonts/helvetica-neue/HelveticaNeueBlackCond.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/helvetica-neue/HelveticaNeueHeavy.woff2") format("woff2"),
+    url("../fonts/helvetica-neue/HelveticaNeueHeavy.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/helvetica-neue/HelveticaNeueMedium.woff2") format("woff2"),
+    url("../fonts/helvetica-neue/HelveticaNeueMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/helvetica-neue/HelveticaNeueItalic.woff2") format("woff2"),
+    url("../fonts/helvetica-neue/HelveticaNeueItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/helvetica-neue/HelveticaNeueMedium.woff2") format("woff2"),
+    url("../fonts/helvetica-neue/HelveticaNeueMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/helvetica-neue/HelveticaNeueThin.woff2") format("woff2"),
+    url("../fonts/helvetica-neue/HelveticaNeueThin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/helvetica-neue/HelveticaNeueBold.woff2") format("woff2"),
+    url("../fonts/helvetica-neue/HelveticaNeueBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/helvetica-neue/HelveticaNeueRegular.woff2") format("woff2"),
+    url("../fonts/helvetica-neue/HelveticaNeueRegular.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/helvetica-neue/HelveticaNeueLight.woff2") format("woff2"),
+    url("../fonts/helvetica-neue/HelveticaNeueLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/helvetica-neue/HelveticaNeueBold.woff2") format("woff2"),
+    url("../fonts/helvetica-neue/HelveticaNeueBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Netflix Sans", "HelveticaNeue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}

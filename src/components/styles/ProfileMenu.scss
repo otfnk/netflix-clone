@@ -1,0 +1,98 @@
+.dropdown-menu-wrapper {
+  width: 9rem;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 4rem;
+  right: 2.5rem;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border: 1px solid #1d1d1d;
+  .profile-list {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.4rem 0 0 0.6rem;
+    cursor: pointer;
+    .menu-profile-img {
+      width: 2.2rem;
+      height: 2.2rem;
+      border-radius: 5px;
+      margin-right: 0.1rem;
+    }
+    .profile-email {
+      color: white;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+  }
+  .button-list {
+    display: flex;
+    flex-direction: column;
+    .add-movie-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      padding: 0.2rem 0.7rem;
+      width: 10rem;
+      cursor: pointer;
+      .add-movie-icon {
+        width: 2.2rem;
+        transform: scale(0.6);
+      }
+      .add-movie-text {
+        color: white;
+        font-size: 0.7rem;
+        font-weight: 500;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .account-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      padding: 0.2rem 0.7rem;
+      width: 10rem;
+      cursor: pointer;
+      .account-icon {
+        width: 2.2rem;
+        transform: scale(1.2);
+      }
+      .account-button-text {
+        color: white;
+        font-size: 0.8rem;
+        font-weight: 500;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .signout-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.2rem 1.2rem;
+      width: 8.9rem;
+      height: 3rem;
+      cursor: pointer;
+      border-top: 1px solid #4a474e;
+      .signout-icon {
+        width: 1.4rem;
+        margin-left: 0.5rem;
+      }
+      .signout-button-text {
+        color: white;
+        font-size: 0.8rem;
+        font-weight: 500;
+      }
+      .signout-button-text:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

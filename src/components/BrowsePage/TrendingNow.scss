@@ -1,0 +1,126 @@
+.thumbnail-image {
+  width: 15rem;
+  height: 8rem;
+  margin-right: 0.7rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.movie {
+  position: relative;
+  display: flex;
+  width: 0.0001px;
+  height: 20rem;
+  opacity: 0;
+  top: -1.8rem;
+  align-items: flex-end;
+  background-color: aqua;
+  z-index: 100;
+  .movie-wrapper {
+    background-color: #141414;
+    width: 17rem;
+    height: 17.5rem;
+    z-index: 99;
+    border-radius: 5px;
+    display: flex;
+    overflow-y: visible;
+    flex-direction: column;
+    position: relative;
+    left: -16rem;
+    top: -1rem;
+    transition: 0.4s;
+    box-shadow: 0px 0px 17px 5px #000000;
+    .image-wrapper {
+      width: 17rem;
+      .expanded-image {
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+        cursor: pointer;
+      }
+    }
+    .buttons-wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      position: relative;
+      margin-top: 1rem;
+      width: 15rem;
+      left: 1rem;
+      .left-buttons-wrapper {
+        display: flex;
+        button {
+          width: 2.4rem;
+          background-color: #14141475;
+          color: white;
+          height: 2.4rem;
+          border-radius: 50%;
+          border: 2px solid #919191;
+          outline: none;
+          margin: 0 0.1rem;
+          cursor: pointer;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          transition: 0.2s;
+          &:hover {
+            border: 2px solid #fff;
+          }
+          .play-icon,
+          .plus-icon,
+          .like-icon {
+            width: 0.9rem;
+          }
+        }
+      }
+      .right-button-wrapper {
+        position: relative;
+        button {
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 2.4rem;
+          background-color: #14141475;
+          color: white;
+          height: 2.4rem;
+          border-radius: 50%;
+          border: 2px solid #919191;
+          outline: none;
+          margin: 0 0.1rem;
+          transition: 0.2s;
+          &:hover {
+            border: 2px solid #fff;
+          }
+          .more-icon {
+            width: 0.8rem;
+          }
+        }
+      }
+    }
+    .info-text-wrapper {
+      position: relative;
+      left: 1.2rem;
+      margin: 0.8rem 0 0 0;
+      h3 {
+        border: 1px solid #747474;
+        display: inline;
+        color: #fff;
+        font-size: 1rem;
+        padding: 0 0.5rem;
+        font-weight: 500;
+      }
+    }
+    .category-wrapper {
+      position: relative;
+      left: 1.2rem;
+      margin-top: 0.5rem;
+      .category-text {
+        margin: 0;
+        color: #fff;
+        font-weight: 300;
+        font-size: 1rem;
+      }
+    }
+  }
+}

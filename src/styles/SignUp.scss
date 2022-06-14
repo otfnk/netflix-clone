@@ -1,0 +1,215 @@
+$small-screen: 500px;
+
+.signup-navigation {
+  border-bottom: 1px solid rgba($color: #4e4e4e, $alpha: 0.3);
+  z-index: 1;
+  .register-section-signin-button {
+    font-size: 1.2rem;
+    letter-spacing: 0;
+    font-weight: 500;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.register-page-section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .register-wrapper {
+    width: 30rem;
+    height: 35rem;
+    @media only screen and (max-width: 768px) {
+      width: 25rem;
+      height: 30rem;
+    }
+    @media only screen and (max-width: $small-screen) {
+      width: 20rem;
+      height: 25rem;
+    }
+    .register-header {
+      padding: 0 2rem;
+      display: flex;
+      flex-direction: column;
+
+      .little-text {
+        position: relative;
+        font-size: 0.8rem;
+        color: #3a3a3a;
+        top: 2.6rem;
+        left: 0.1rem;
+        @media only screen and (max-width: 768px) {
+          top: 2.2rem;
+        }
+        @media only screen and (max-width: $small-screen) {
+          top: 2rem;
+        }
+      }
+      .register-header-text {
+        color: #3a3a3a;
+        font-weight: 500;
+        font-size: 2rem;
+        @media only screen and (max-width: 768px) {
+          font-size: 1.4rem;
+        }
+        @media only screen and (max-width: $small-screen) {
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    .register-subheader {
+      padding: 0 2rem;
+      .register-subheader-text {
+        color: #3a3a3a;
+        font-weight: 400;
+        font-size: 1.2rem;
+        @media only screen and (max-width: 768px) {
+          font-size: 1.1rem;
+        }
+      }
+    }
+    .register-form-wrapper {
+      width: 100%;
+      padding: 0 2rem;
+
+      .username-input-wrapper {
+        display: flex;
+        position: relative;
+
+        flex-direction: column;
+        .register-username-label {
+          color: rgba(58, 58, 58, 0.707);
+          position: absolute;
+          top: 1.5rem;
+          left: 0.5rem;
+          cursor: text;
+          transition: 0.1s ease-in;
+        }
+        .register-username-input {
+          outline: none;
+          border-radius: 2px;
+          border: 1px solid rgb(69, 69, 69);
+          background-color: transparent;
+          color: #3a3a3a;
+          width: 100%;
+          height: 3.5rem;
+          font-weight: 500;
+          font-size: 1rem;
+          margin-top: 0.3rem;
+          padding: 0 0.5rem;
+        }
+        .register-username-input:focus ~ .register-username-label,
+        .register-username-input:not(:placeholder-shown).register-username-input:not(:focus)
+          ~ .register-username-label {
+          top: 0.45rem;
+          left: 10px;
+          font-size: 0.76rem;
+          font-weight: bold;
+          color: rgba($color: #3a3a3a, $alpha: 0.6);
+          user-select: none;
+        }
+        .email-required {
+          color: #b82c2b;
+          margin: 0;
+          font-size: 0.8rem;
+        }
+      }
+      .password-input-wrapper {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        .register-password-label {
+          color: #3a3a3a;
+          position: absolute;
+          color: rgba(58, 58, 58, 0.707);
+          position: absolute;
+          top: 1.5rem;
+          left: 0.5rem;
+          cursor: text;
+          transition: 0.1s ease-in;
+        }
+        .register-password-input {
+          outline: none;
+          border-radius: 2px;
+          border: 1px solid rgb(69, 69, 69);
+          background-color: transparent;
+          color: #3a3a3a;
+          width: 100%;
+          height: 3.5rem;
+          font-weight: 500;
+          font-size: 1rem;
+          margin-top: 0.3rem;
+          padding: 0 0.5rem;
+        }
+        .register-password-input:focus ~ .register-password-label,
+        .register-password-input:not(:placeholder-shown).register-password-input:not(:focus)
+          ~ .register-password-label {
+          top: 0.45rem;
+          left: 10px;
+          font-size: 0.76rem;
+          font-weight: bold;
+          color: rgba($color: #3a3a3a, $alpha: 0.6);
+          user-select: none;
+        }
+      }
+      .password-required {
+        color: #b82c2b;
+        margin: 0;
+        font-size: 0.8rem;
+      }
+      .register-button {
+        width: 100%;
+        height: 3rem;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 1.5rem 0;
+        font-size: 1.2rem;
+        color: white;
+        background-color: #e50815;
+        transition: 0.4s;
+        @media only screen and (max-width: $small-screen) {
+          font-size: 1rem;
+        }
+      }
+      .register-button:hover {
+        background-color: #a90808;
+      }
+      .register-button2 {
+        width: 100%;
+        height: 3rem;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 1.5rem 0;
+        font-size: 1.2rem;
+        color: white;
+        background-color: #3e5b49;
+        transition: 0.4s;
+        @media only screen and (max-width: $small-screen) {
+          font-size: 1rem;
+        }
+      }
+    }
+    .register-gotoback-wrapper {
+      display: inline-flex;
+      align-items: center;
+      height: 3rem;
+      margin-top: 1rem;
+      cursor: pointer;
+      padding: 0 0 0 2rem;
+      color: #3a3a3a;
+      font-size: 1.5rem;
+      font-weight: 100;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

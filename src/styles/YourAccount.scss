@@ -1,0 +1,316 @@
+.youraccount-navbar {
+  background: #141414;
+  position: relative;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  .browser-nav-logo {
+    margin-left: 2rem;
+    width: 10rem;
+    height: 3rem;
+    @media only screen and (max-width: 1000px) {
+      margin-left: 0.2rem;
+    }
+    @media only screen and (max-width: 768px) {
+      width: 8rem;
+      height: 2.5rem;
+    }
+  }
+  .browser-nav-left-side {
+    position: relative;
+    display: flex;
+    width: 40rem;
+    align-items: center;
+  }
+  .browser-nav-right-side {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .browser-nav-icons-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 1.3rem;
+      .search-icon {
+        cursor: pointer;
+        width: 1.5rem;
+      }
+      .bell-icon {
+        cursor: pointer;
+        width: 1.5rem;
+        @media only screen and (max-width: 768px) {
+          margin-right: 1.5rem;
+        }
+      }
+    }
+    .browser-nav-profile {
+      display: flex;
+      width: 6rem;
+      align-items: center;
+      cursor: pointer;
+      .browser-nav-profile-picture {
+        width: 2.2rem;
+        height: 2.2rem;
+        border-radius: 6px;
+      }
+      .browser-arrow-icon {
+        position: relative;
+        left: -15px;
+      }
+    }
+  }
+}
+
+.youraccount-wrapper {
+  min-height: 100vh;
+  background-color: #f3f3f3;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  .account-details-wrapper {
+    position: relative;
+    width: 65rem;
+    top: 3.5rem;
+    @media only screen and (max-width: 1000px) {
+      width: 50rem;
+    }
+    @media only screen and (max-width: 768px) {
+      width: 35rem;
+    }
+    @media only screen and (max-width: 500px) {
+      width: 25rem;
+    }
+    .header-wrapper {
+      border-bottom: 1px solid #999999af;
+      .title-text {
+        margin: 0 0 1rem 0;
+        font-weight: 400;
+        color: #333333;
+      }
+    }
+
+    .membership-wrapper {
+      display: flex;
+      border-bottom: 1px solid #999999af;
+      .membership-text-wrapper {
+        height: 15rem;
+        width: 17rem;
+        @media only screen and (max-width: 1000px) {
+          width: 13rem;
+          height: 11rem;
+        }
+        @media only screen and (max-width: 768px) {
+          width: 10rem;
+          height: 8rem;
+        }
+        .membership-text {
+          color: #757575;
+          font-size: 1.4rem;
+          font-weight: 300;
+        }
+        .cancel-membership {
+          border: none;
+          border-bottom: 1px solid #c2c2c2;
+          border-radius: 2px;
+          width: 12rem;
+          height: 2.2rem;
+          background-color: #d8d8d8;
+          color: #313131;
+          font-weight: 500;
+          position: relative;
+          top: -12px;
+          cursor: pointer;
+          transition: 0.2s ease;
+          &:hover {
+            background-color: #e8e8e8;
+          }
+          @media only screen and (max-width: 768px) {
+            width: 8rem;
+            font-size: 0.7rem;
+          }
+        }
+      }
+      .account-details-wrapper {
+        width: 17rem;
+        height: 15rem;
+        position: relative;
+        top: 5px;
+        @media only screen and (max-width: 1000px) {
+          width: 13rem;
+          height: 11rem;
+        }
+        @media only screen and (max-width: 768px) {
+          width: 10rem;
+          height: 8rem;
+        }
+        .user-email {
+          color: #333333;
+          font-weight: 500;
+        }
+        .user-id {
+          color: #888888;
+          position: relative;
+          top: -0.6rem;
+        }
+        .user-phone {
+          position: relative;
+          top: -1.2rem;
+          color: #888888;
+          @media only screen and (max-width: 768px) {
+            display: none;
+          }
+        }
+      }
+      .membership-buttons-wrapper {
+        width: 12rem;
+        height: 15rem;
+        position: relative;
+        top: 5px;
+        text-align: right;
+        left: 19rem;
+        @media only screen and (max-width: 1000px) {
+          width: 13rem;
+          height: 11rem;
+          left: 11rem;
+        }
+        @media only screen and (max-width: 768px) {
+          width: 10rem;
+          height: 8rem;
+          left: 5rem;
+        }
+        @media only screen and (max-width: 500px) {
+          display: none;
+        }
+        .change-account {
+          color: #0173e5;
+          cursor: pointer;
+          &:hover {
+            text-decoration: underline;
+          }
+          @media only screen and (max-width: 768px) {
+            font-size: 0.8rem;
+          }
+        }
+        .change-password {
+          color: #0173e5;
+          cursor: pointer;
+          top: -0.5rem;
+          position: relative;
+          &:hover {
+            text-decoration: underline;
+          }
+          @media only screen and (max-width: 768px) {
+            font-size: 0.8rem;
+          }
+        }
+        .change-phone {
+          color: #0173e5;
+          cursor: pointer;
+          top: -1.1rem;
+          position: relative;
+          &:hover {
+            text-decoration: underline;
+          }
+          @media only screen and (max-width: 768px) {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+    .plan-details-wrapper {
+      height: 5rem;
+      width: 100%;
+      border-bottom: 1px solid #999999af;
+      display: flex;
+      .plan-details {
+        width: 17rem;
+        display: flex;
+
+        .plan-details-text {
+          color: #757575;
+          font-size: 1.4rem;
+          font-weight: 300;
+          margin: 1rem 0;
+          @media only screen and (max-width: 500px) {
+            width: 12rem;
+          }
+        }
+      }
+      .plan-info {
+        display: flex;
+        width: 30rem;
+        @media only screen and (max-width: 768px) {
+          width: 20rem;
+        }
+        .plan-info-text {
+          color: #333333;
+          font-weight: bold;
+        }
+        .account-plan-svg {
+          position: relative;
+          top: 1rem;
+          margin-left: 10px;
+          @media only screen and (max-width: 768px) {
+            top: 0.4rem;
+          }
+        }
+      }
+      .change-plan-wrapper {
+        width: 19rem;
+        .change-plan-button {
+          text-align: right;
+          color: #0173e4;
+          cursor: pointer;
+          @media only screen and (max-width: 500px) {
+            display: none;
+          }
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .change-profile-picture-wrapper {
+      height: 6rem;
+      display: flex;
+      margin: 1rem 0;
+      .change-profile-picture-header {
+        width: 16.7rem;
+        .profile-picture-text {
+          color: #757575;
+          font-size: 1.4rem;
+          font-weight: 300;
+          position: relative;
+          top: -1.4rem;
+          @media only screen and (max-width: 500px) {
+            width: 12rem;
+          }
+        }
+      }
+      .image-wrapper {
+        width: 40rem;
+        .account-profile-pic {
+          width: 6rem;
+          height: 6rem;
+        }
+      }
+      .image-upload-wrapper {
+        width: 8rem;
+        display: flex;
+        justify-content: flex-end;
+        #image-input-youraccount {
+          display: none;
+        }
+        .upload-image-label {
+          color: #0173e4;
+          height: 2rem;
+          cursor: pointer;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

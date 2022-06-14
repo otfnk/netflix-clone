@@ -1,0 +1,32 @@
+.accordion__heading {
+  display: flex;
+  margin: 0.4rem 0;
+  align-items: center;
+  padding: 0 3rem;
+  border-bottom: 6px solid black;
+  .accordion__button {
+    font-size: 1.7rem;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    width: 100%;
+    @media only screen and (max-width: 768px) {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+.accordion__panel {
+  color: white;
+  padding: 0 2rem;
+  font-weight: 400;
+  font-size: 1.3rem;
+  padding: 1rem 2rem;
+  background-color: #2b2b2b;
+  border-bottom: 6px solid black;
+  @media only screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
+}

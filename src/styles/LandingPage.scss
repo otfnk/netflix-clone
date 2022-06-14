@@ -1,0 +1,763 @@
+$small-screen: 500px;
+
+nav {
+  width: 100%;
+  height: 4rem;
+  margin-top: 1rem;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+
+  .nav-logo {
+    margin-left: 2rem;
+    width: 10rem;
+    height: 3rem;
+  }
+
+  .navbar-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .button-wrapper {
+      display: flex;
+      margin-right: 2rem;
+
+      .select-language {
+        width: 4rem;
+        height: 2rem;
+        display: flex;
+        margin-right: 0.7rem;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border: 1px solid #fff;
+        border-radius: 7px;
+        cursor: pointer;
+      }
+
+      .lang {
+        margin-left: 0.2rem;
+      }
+
+      .signin-button {
+        cursor: pointer;
+        margin-left: 0.5rem;
+        width: 6rem;
+        height: 2rem;
+        background-color: #e50815;
+        color: white;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.2s;
+      }
+      .signin-button:hover {
+        background-color: #a90808;
+      }
+    }
+  }
+}
+
+.section-one {
+  overflow: hidden;
+  min-height: 100vh;
+  background-color: rgb(0, 0, 0);
+  height: 100%;
+  background-image: url("../media/netflix-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  width: 45rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media only screen and (max-width: 768px) {
+    margin: 0 1rem;
+  }
+  .header-one {
+    color: #fff;
+    font-weight: 500;
+    font-size: 3.2rem;
+    text-align: center;
+    width: 35rem;
+    @media only screen and (max-width: 768px) {
+      font-size: 2.2rem;
+      width: 28rem;
+    }
+  }
+  .header-two {
+    color: #fff;
+    font-size: 1.5rem;
+    position: relative;
+    top: -2rem;
+    font-weight: 400;
+    text-align: center;
+    @media only screen and (max-width: 768px) {
+      font-size: 1.2rem;
+    }
+  }
+  .header-three {
+    position: relative;
+    top: -2.7rem;
+    font-weight: 400;
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    @media only screen and (max-width: 768px) {
+      font-size: 0.9rem;
+    }
+  }
+  .input-wrapper {
+    position: relative;
+    top: -2.7rem;
+    display: flex;
+    width: 100%;
+    .landing-page-form {
+      display: flex;
+      width: 100%;
+      .email-adress-wrapper {
+        width: 100%;
+        display: flex;
+        position: relative;
+        .landing-page-email-input {
+          outline: none;
+          border: none;
+          width: 70%;
+          height: 4rem;
+          font-size: 1rem;
+          padding: 1rem;
+          @media only screen and (max-width: 768px) {
+            height: 4rem;
+          }
+        }
+        .landing-page-email-label {
+          position: absolute;
+          padding: 1rem;
+          color: rgba(71, 71, 71, 0.533);
+          cursor: text;
+          top: 5px;
+          transition: 0.1s;
+        }
+        .landing-page-email-input:focus ~ .landing-page-email-label,
+        .landing-page-email-input:not(:placeholder-shown).landing-page-email-input:not(:focus)
+          ~ .landing-page-email-label {
+          top: -0.6rem;
+          left: -1px;
+          font-size: 0.8rem;
+          user-select: none;
+          font-weight: 500;
+        }
+        .get-started-btn {
+          margin-left: 0.5rem;
+          width: 30%;
+          margin-left: -0.3rem;
+          height: 4rem;
+          cursor: pointer;
+          background-color: #e50815;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: 0.2s;
+          letter-spacing: 0.5px;
+          outline: none;
+          border: none;
+          font-size: 1.6rem;
+          @media only screen and (max-width: 768px) {
+            font-size: 1.2rem;
+            height: 4rem;
+          }
+          @media only screen and (max-width: $small-screen) {
+            font-size: 1rem;
+          }
+        }
+        .get-started-btn:hover {
+          background-color: rgb(169, 8, 8);
+        }
+      }
+    }
+  }
+}
+
+.section-two {
+  width: 100%;
+  min-height: 27rem;
+  border-top: 10px solid #333333;
+  border-bottom: 10px solid #333333;
+  background-color: black;
+  display: flex;
+  .section-two-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+    .headers-wrapper {
+      width: 35rem;
+      height: 15rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      position: relative;
+      padding: 0 3rem;
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+      }
+      .section-two-header {
+        color: white;
+        position: relative;
+        font-size: 3rem;
+        font-weight: 500;
+        @media only screen and (max-width: 768px) {
+          font-size: 2.5rem;
+        }
+        @media only screen and (max-width: $small-screen) {
+          font-size: 2rem;
+        }
+      }
+      .section-two-subheader {
+        color: white;
+        font-size: 1.6rem;
+        font-weight: 400;
+        position: relative;
+        top: -2rem;
+        @media only screen and (max-width: 768px) {
+          font-size: 1.3rem;
+          width: fit-content;
+          padding: 0 5rem;
+        }
+        @media only screen and (max-width: $small-screen) {
+          font-size: 1rem;
+          width: fit-content;
+          padding: 0 1rem;
+        }
+      }
+    }
+  }
+  .section-two-right {
+    display: flex;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    .tv-png {
+      width: 35vw;
+      height: 25vw;
+      position: relative;
+      z-index: 2;
+      @media only screen and (max-width: 768px) {
+        width: 22.5rem;
+        height: 15rem;
+      }
+    }
+    .landing-page-video {
+      position: absolute;
+      width: 26vw;
+      z-index: 1;
+      @media only screen and (max-width: 768px) {
+        width: 16.4rem;
+      }
+    }
+  }
+}
+
+.section-three {
+  width: 100%;
+  min-height: 27rem;
+  border-bottom: 10px solid #333333;
+  background-color: black;
+  display: flex;
+  .section-three-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 3rem;
+    @media only screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+    }
+    .section-three-left {
+      position: relative;
+      width: 50%;
+      height: 20rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+      }
+      .mobile {
+        width: 25rem;
+        @media only screen and (max-width: 768px) {
+          width: 25rem;
+        }
+        @media only screen and (max-width: $small-screen) {
+          width: 20rem;
+        }
+      }
+      .section-three-popup {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        bottom: 2rem;
+        width: 25rem;
+        background: rgba(0, 0, 0, 0.61);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(8.7px);
+        -webkit-backdrop-filter: blur(8.7px);
+        border: 3px solid #333333;
+        @media only screen and (max-width: 768px) {
+          width: 20rem;
+        }
+        @media only screen and (max-width: $small-screen) {
+          width: 17rem;
+        }
+        .pop-up-left {
+          display: flex;
+          align-items: center;
+          .littleStrangerThings {
+            width: 4rem;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            @media only screen and (max-width: $small-screen) {
+              width: 2rem;
+            }
+          }
+          .downloading {
+            color: white;
+            font-size: 1rem;
+            margin-left: 1rem;
+            font-weight: 400;
+            @media only screen and (max-width: 768px) {
+              font-size: 0.8rem;
+            }
+          }
+        }
+        .downloading-gif {
+          border-radius: 50%;
+          width: 3.5rem;
+        }
+      }
+    }
+    .section-three-headers {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+      @media only screen and (max-width: 768px) {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .section-three-header {
+        color: white;
+        font-size: 3rem;
+        width: 33rem;
+        font-weight: 500;
+        line-height: 50px;
+        @media only screen and (max-width: 768px) {
+          padding: 0 1.7rem;
+          font-size: 2rem;
+          width: 100%;
+          line-height: 30px;
+        }
+        @media only screen and (max-width: $small-screen) {
+          padding: 0 1.7rem;
+          font-size: 1.8rem;
+        }
+      }
+      .section-three-subheader {
+        color: white;
+        font-size: 1.6rem;
+        width: 33rem;
+        font-weight: 400;
+        position: relative;
+        top: -2.7rem;
+        @media only screen and (max-width: 768px) {
+          padding: 0 1.7rem;
+          font-size: 1.2rem;
+          top: -1.5rem;
+          width: 100%;
+        }
+        @media only screen and (max-width: $small-screen) {
+          padding: 0 1.7rem;
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}
+
+.section-four {
+  width: 100%;
+  min-height: 30rem;
+  border-bottom: 10px solid #333333;
+  background-color: black;
+  display: flex;
+  .section-four-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+    .section-four-headers {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 50%;
+      height: 100%;
+      position: relative;
+      left: 4rem;
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+        left: 0;
+      }
+      .section-four-header {
+        color: white;
+        font-size: 3rem;
+        font-weight: 500;
+        width: 30rem;
+        text-align: left;
+        @media only screen and (max-width: 768px) {
+          font-size: 2.5rem;
+          text-align: center;
+        }
+        @media only screen and (max-width: $small-screen) {
+          font-size: 2rem;
+        }
+      }
+      .section-four-subheader {
+        color: white;
+        font-size: 1.6rem;
+        width: 30rem;
+        text-align: left;
+        font-weight: 400;
+        position: relative;
+        top: -2rem;
+        // padding: 0 2rem;
+        @media only screen and (max-width: 768px) {
+          font-size: 1.2rem;
+          text-align: center;
+        }
+        @media only screen and (max-width: 768px) {
+          font-size: 1.2rem;
+          text-align: center;
+        }
+        @media only screen and (max-width: $small-screen) {
+          font-size: 1rem;
+          text-align: center;
+        }
+      }
+    }
+    .section-four-right {
+      width: 50%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .multiple-devices {
+        position: relative;
+        width: 41vw;
+        height: 29vw;
+        z-index: 2;
+        @media only screen and (max-width: 768px) {
+          width: 22.5rem;
+          height: 15rem;
+        }
+      }
+      .section-four-video {
+        position: absolute;
+        width: 26vw;
+        height: 20vw;
+        top: 0.2rem;
+        z-index: 1;
+        @media only screen and (max-width: 768px) {
+          width: 12.4rem;
+          top: 1.8rem;
+        }
+      }
+    }
+  }
+}
+
+.section-five {
+  width: 100%;
+  min-height: 30rem;
+  border-bottom: 10px solid #333333;
+  background-color: black;
+  display: flex;
+
+  .section-five-wrapper {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    @media only screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+    }
+    .section-three-left {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .netflix-kids-img {
+        width: 30vw;
+        @media only screen and (max-width: 768px) {
+          width: 22rem;
+        }
+      }
+    }
+    .section-five-headers {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      padding: 0 2rem 0 0;
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+        align-items: center;
+      }
+      .section-five-header {
+        color: white;
+        font-size: 3rem;
+        font-weight: 500;
+        @media only screen and (max-width: 768px) {
+          font-size: 2.5rem;
+        }
+        @media only screen and (max-width: $small-screen) {
+          font-size: 2rem;
+          text-align: center;
+        }
+      }
+      .section-five-subheader {
+        color: white;
+        font-weight: 400;
+        font-size: 1.6rem;
+        position: relative;
+        width: 33rem;
+        top: -3rem;
+        @media only screen and (max-width: 768px) {
+          font-size: 1.2rem;
+          text-align: center;
+          top: -2rem;
+        }
+        @media only screen and (max-width: $small-screen) {
+          font-size: 1rem;
+          text-align: center;
+          padding: 0 2rem;
+        }
+      }
+    }
+  }
+}
+
+.faq-section {
+  width: 100%;
+  min-height: 30rem;
+  border-bottom: 10px solid #333333;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .faq-header-wrapper {
+    display: flex;
+    width: 100%;
+    height: 10rem;
+    justify-content: center;
+    align-items: center;
+    .faq-header {
+      color: white;
+      font-weight: 500;
+      font-size: 3rem;
+      @media only screen and (max-width: 768px) {
+        font-size: 2.3rem;
+      }
+      @media only screen and (max-width: $small-screen) {
+        font-size: 2rem;
+      }
+    }
+  }
+  .faq-questions-answers-wrapper {
+    background-color: rgb(56, 56, 56);
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    @media only screen and (max-width: 768px) {
+      width: 70%;
+    }
+  }
+  .landingpage-footer-wrapper {
+    margin: 1rem;
+    .landingpage-footer-text {
+      font-size: 1.3rem;
+      color: white;
+      font-weight: 400;
+      @media only screen and (max-width: 768px) {
+        font-size: 1rem;
+      }
+    }
+  }
+  .input-wrapper {
+    position: relative;
+    top: -0.4rem;
+    display: flex;
+    width: 50.5%;
+    @media only screen and (max-width: 768px) {
+      width: 70%;
+    }
+
+    .landing-page-form {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      position: relative;
+      .landing-page-faq-input-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .landing-page-faq-input {
+          outline: none;
+          border: none;
+          width: 60%;
+          height: 3rem;
+          font-size: 1rem;
+          padding: 1rem;
+          @media only screen and (max-width: 768px) {
+            width: 80%;
+          }
+        }
+        .landing-page-faq-label {
+          position: absolute;
+          padding: 1rem;
+          color: rgba(93, 92, 92, 0.533);
+          top: -3px;
+          left: 4.6rem;
+          cursor: text;
+          transition: 0.1s;
+          @media only screen and (max-width: 768px) {
+            left: 0.1rem;
+          }
+        }
+        .landing-page-faq-input:focus ~ .landing-page-faq-label,
+        .landing-page-faq-input:not(:placeholder-shown).landing-page-faq-input:not(:focus)
+          ~ .landing-page-faq-label {
+          top: -1rem;
+          left: 4.6rem;
+          font-size: 0.8rem;
+          user-select: none;
+          font-weight: 500;
+          @media only screen and (max-width: 768px) {
+            left: 0.1rem;
+          }
+        }
+        .get-started-btn {
+          margin-left: 0.5rem;
+          width: 20%;
+          margin-left: -0.3rem;
+          height: 3rem;
+          cursor: pointer;
+          background-color: #e50815;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: 0.2s;
+          outline: none;
+          border: none;
+          font-size: 1.2rem;
+          @media only screen and (max-width: 768px) {
+            font-size: 1rem;
+            width: 40%;
+          }
+          @media only screen and (max-width: $small-screen) {
+            font-size: 0.8rem;
+          }
+        }
+        .get-started-btn:hover {
+          background-color: rgb(169, 8, 8);
+        }
+      }
+    }
+  }
+}
+
+.footer-section {
+  width: 100%;
+  min-height: 10rem;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .footer-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    position: relative;
+    .questions-header {
+      font-size: 0.9rem;
+      color: rgb(109, 109, 109);
+      width: 100%;
+      height: 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem;
+      h2 {
+        display: flex;
+        align-items: center;
+        font-weight: 200;
+        @media only screen and (max-width: 768px) {
+          font-size: 1.2rem;
+        }
+        @media only screen and (max-width: $small-screen) {
+          font-size: 1rem;
+        }
+        a {
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          color: #b16464;
+          font-size: 1.2rem;
+          font-weight: 100;
+          margin-left: 0.3rem;
+          transition: 0.2s;
+          width: 5rem;
+          cursor: pointer;
+          img {
+            width: 3rem;
+          }
+        }
+        a:hover {
+          color: rgb(169, 8, 8);
+        }
+      }
+    }
+  }
+}
